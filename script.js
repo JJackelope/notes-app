@@ -11,4 +11,4 @@ return;
 const noteDiv = document.createElement('div');
 noteDiv.classList.add('note');
 noteDiv.textContent = noteInput.value = ";
-})
+});
