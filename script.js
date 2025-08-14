@@ -1,17 +1,17 @@
 javascript
 document.getElementById('add-note-btn').addEventListener('click',function () {
-const noteInput = document.getElementById('note-input');
-const notesContainer = document.getElementById('notes-container');
+    const noteInput = document.getElementById('note-input');
+    const notesContainer = document.getElementById('notes-container');
 
-if (noteInput.value.trim() === ") {
-alert('Пожалуйста, введи текст заметки.');
-return;
-}
+   if (noteInput.value.trim() === "") {
+       alert('Пожалуйста, введи текст заметки.');
+       return;
+    }
 
 const noteDiv = document.createElement('div');
-noteDiv.classList.add('note');
-noteDiv.textContent = noteInput.value;
+  noteDiv.classList.add('note');
+  noteDiv.textContent = noteInput.value;
 
-notesContainer.appendChild(noteDiv);
-noteInput.value = ";
+  notesContainer.appendChild(noteDiv);
+  noteInput.value = "";
 });
