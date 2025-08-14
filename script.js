@@ -1,4 +1,4 @@
-`javascript
+javascript
 document.getElementById('add-note-btn').addEventListener('click',function () {
 const noteInput = document.getElementById('note-input');
 const notesContainer = document.getElementById('notes-container');
